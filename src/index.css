@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    color: #f4f4f4; 
+    cursor: url("../images/cursor.png"),auto;
+}
+
+label,a{
+    cursor: url("../images/cursor.png"),auto;
+}
+
+input,textarea,button,i,svg{
+    cursor: url("../images/cursor_two.png"), auto;
+
+}
+.buttons{
+    cursor: url("../images/cursor_two.png"), auto;
+
+}
+
+nav{
+    background-color:rgb(237, 237, 237,.1);
+    backdrop-filter: blur(10px);
+}
+.navbar-color{
+    background-color:rgb(237, 237, 237,.1);
+    backdrop-filter: blur(10px);
+}
+.home {
+    background-image: url('../images/homeImage.png');
+    height: 44rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; 
+}
+
+
+
+
+.projectImages{
+    height: 200px;
+    width: 280px;
+}
+
+.logo-image{
+    width: 100px;
+    height: 40px;
+}
+h2,h1{
+    color: #ff7f50;
+}
+.animated-text span::after {
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 10s infinite;
+}
+
+
+
+@keyframes words {
+    0%,20% {
+        content: "Full Stack Dev";
+    }
+    21%,40% {
+        content: "MERN Stack Dev";
+    }
+    41%,60% {
+        content: "Jr Software Dev";
+    }
+    61%,80% {
+        content: "Designer";
+    }
+    81%,100% {
+        content: "Gamer";
+    }
+} 
+
+@media screen and (min-width:1024px) {
+    .projectImages{
+        height: 250px;
+        width: 400px;
+    }
+    
+}
+.scroll-container {
+    width: 150px; 
+    overflow: hidden;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: none; 
+}
+
+.scroll-text:hover {
+    cursor: url("../images/cursor_two.png"), auto;
+    animation: marquee 1s linear infinite; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%); 
+    }
+    100%{
+        transform: translateX(50%); 
+    }
+}
+
+.containers {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0 );
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}

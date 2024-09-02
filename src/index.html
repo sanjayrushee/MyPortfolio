@@ -1,0 +1,210 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <title>Sanjay Portfolio</title>
+  </head>
+  <body>
+
+    <nav class="fixed top-0 left-0 w-full z-50 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#home" >
+        <img src="../images/m15logo.png" alt="Logo"  class="logo-image"></a>
+
+        <button class="text-white block lg:hidden" id="nav-toggle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div class="hidden lg:flex space-x-7" id="nav-menu">
+          <a href="#home" class="text-gray-300 hover:text-[#ff7f50] hover:underline underline-offset-4 text-lg font-bold">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-[#ff7f50] hover:underline underline-offset-4  text-lg font-bold">About</a>
+          <a href="#projects" class="text-gray-300 hover:text-[#ff7f50] hover:underline underline-offset-4  text-lg font-bold">Projects</a>
+          <a href="#contactme" class="text-gray-300 hover:text-[#ff7f50] hover:underline underline-offset-4  text-lg font-bold">Contact</a>
+        </div>
+        <div class="hidden lg:flex"></div>
+      </div>
+
+      <div class=" fixed inset-0 bg-[#111] h-screen z-50 text-center lg:hidden pt-14 hidden" id="nav-mobile">
+        <button class="absolute top-4 right-4 text-white text-2xl" id="nav-close">x</button>
+        <a href="#home" class="block text-gray-300 hover:text-white px-2 py-3 text-lg font-bold">Home</a>
+        <a href="#about" class="block text-gray-300 hover:text-white px-2 py-3 text-lg font-bold">About</a>
+        <a href="#projects" class="block text-gray-300 hover:text-white px-2 py-3 text-lg font-bold">Projects</a>
+        <a href="#contactme" class="block text-gray-300 hover:text-white px-2 py-3 text-lg font-bold">Contact</a>
+      </div>
+      
+    </nav>
+    
+    <div class="bg-[#111] min-h-screen text-white md:pt-14">
+      <div class="home h-screen flex relative" id="home">
+        <div class="hometext flex flex-col justify-start items-start pt-40 pl-12 absolute top-0 left-0 right-0 z-20 font-bold">
+            <h1 class="iamheading text-5xl text-gray-200">HI, I'M SANJAY &</h1>
+            <div class="animated-text">
+                <h1 class="text-5xl text-gray-200">I'M A <span class="typing-text text-white"></span></h1>
+            </div>
+        </div>
+      </div>
+      <div class="aboutme containers h-screen pt-28 pl-10 pr-10 md:pl-20 md:pr-20" id="about">
+        <h1 class="font-bold text-5xl pb-5">ABOUT ME</h1>
+        <p class="pt-5 text-xl font-medium">
+          I'm a Full Stack Developer with experience in the MERN stack, and I have strong skills in Java and Python. I'm excited to work on projects that make a difference and to keep learning and growing in the tech industry.</p>
+        <p class="pt-5 text-xl font-medium">I excel at using my tech skills to tackle challenging problems and find effective solutions. My expertise in Python helps me approach issues with a creative and analytical mindset. I am dedicated to continuous improvement and eager to contribute to innovative projects that drive progress in the tech world.</p>
+      </div>
+      <div class="skills containers min-h-screen pt-28 pl-10 pr-5 md:pl-20 md:pr-20" >
+        <h1 class="font-bold text-5xl pb-5">SKILLS</h1>
+        <div class="flex flex-row flex-wrap pt-5 ">
+          <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+            <span class="scroll-text">HTML</span>
+        </p>
+        <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+            <span class="scroll-text">CSS</span> </p>
+          <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+              <span class="scroll-text">Tailwind CSS</span>
+              <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                <span class="scroll-text">Bootstrap</span>
+            </p>
+            <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+              <span class="scroll-text">JavaScript</span>
+          </p>
+            <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                <span class="scroll-text">REACT JS</span>
+            </p>
+            <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                <span class="scroll-text">NODE JS</span> </p>
+                <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                  <span class="scroll-text">EXPRESS JS</span>
+              </p>
+              <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                  <span class="scroll-text">MONGODB</span> </p>
+                  <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                    <span class="scroll-text">SQLITE</span>
+                </p>
+                <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                    <span class="scroll-text">PYTHON</span> </p>
+                    <p class="w-fit pl-5 pt-2 pb-2 pr-5 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                      <span class="scroll-text">C</span> </p>
+                      <p class="w-fit pl-5 pt-2 pb-2 pr-5 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                        <span class="scroll-text">C ++</span> </p>
+                    <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                      <span class="scroll-text">JAVA</span>
+                  </p>
+                    <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                      <span class="scroll-text">AI / ML</span>
+                  </p>
+                  <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                    <span class="scroll-text">IOT</span>
+                </p>
+                <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                  <span class="scroll-text">CYBER SECURITY</span>
+              </p>
+                  <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                      <span class="scroll-text">FIGMA</span> </p>
+                      <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                        <span class="scroll-text">UI/UX</span>
+                    </p>
+                    <p class="w-fit pl-4 pt-2 pb-2 pr-4 m-3 text-2xl font-semibold rounded-full border border-gray-50 overflow-hidden">
+                      <span class="scroll-text">GIT</span>
+            </p>
+        </div>
+      </div>
+      <div class=" projects containers min-h-screen pt-20 md:pl-20 " id="projects">
+          <h1 class="projectheading pt-10 text-5xl ml-4 font-bold">PROJECTS</h1>
+            <div class="card pt-12 pl-7 pb-7 md:flex">
+              <img src="../images/project_one.png" class="projectImages" alt="fdfsd">
+              <div class=" p-2 md:pl-11 pr-8">
+                <h1 class="text-b text-3xl mt-3 pl-2 font-bold">Nxt Trendz</h1>
+                <p class="text-xl	ml-2 mt-2 mr-2">Nxt Trendz is an online shopping e-commerce website that features responsive design, product listings, search functionality, and shopping cart management for a seamless shopping experience.</p>
+              <div class="flex pt-3">
+                <a href="https://sanjaynxtrend.ccbp.tech/" target="_blank" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/sanjayrushee/NXT-Trendz" target="_blank" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svgicon" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a>
+            </div>
+              
+            </div>
+            </div>
+            <div class="card pt-12 pl-7 pb-6 md:flex">
+              <img src="../images/project_two.png" class="projectImages" alt="fdfsd">
+              <div class=" p-2 md:pl-11 pr-8">
+                <h1 class="text-b text-3xl mt-3 pl-2 font-bold">Jobby</h1>
+                <p class="text-xl	ml-2 mt-2 mr-2">Jobby is a job-finding app that features a user-friendly interface, job listings, search functionality, and application tracking to help users efficiently find and apply for job opportunities.</p>
+              <div class="flex pt-3">
+                <a href="https://jobbysr.ccbp.tech/" target="_blank" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/sanjayrushee/Jobby" target="_blank" class="m-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svgicon" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a>
+            </div>
+              
+            </div>
+            </div>
+            <div class="card pt-12 pl-7 pb-6 md:flex">
+              <img src="../images/project_three.png" class="projectImages" alt="fdfsd">
+              <div class=" p-2 md:pl-11 pr-8">
+                <h1 class="text-b text-3xl mt-3 pl-2 font-bold">Double Marker Test Prediction Using Machine Learning</h1>
+                <p class="text-xl	ml-2 mt-2 mr-2">This project develops a user-friendly system for predicting Double Marker test outcomes using React.js and Flask. It integrates AI algorithms like Support Vector Classification (SVC) to provide accurate predictions and streamline diagnostic processes. The system enhances healthcare by bridging technology and clinical practice, offering valuable insights for decision-making.</p>
+            </div>
+            </div>
+      </div>
+      <div class=" containers py-8 lg:py-16 px-4 mx-auto max-w-screen-md" id="contactme">
+        <h2 class="mb-4  text-4xl tracking-tight font-extrabold text-center">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Feel free to reach out to me for any collaboration or inquiries at <a href="mailto:rashmikafan05@gmail.com" class="text-blue-500">Gmail</a>.</p>
+        <form  class="space-y-8">
+            <div>
+                <label for="name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Name</label>
+                <input type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Email</label>
+                <input type="email" id="email" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter the email id" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block min-h-44 max-h-44 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a Message.."></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+              <a href="#_" class="buttons relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#ff7f50] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span class="relative">Submit</span>
+                </a>
+            </button>
+        </form>
+    </div>
+
+    <footer class="copyrights flex justify-between p-2">
+      <p class="text-sm text-gray-200">Developed by M15 Developer - SANJAY</p>
+      <div class="pr-14">
+        <a class="pl-3" href="https://www.linkedin.com/in/sanjay-rushee" target="_blank" ><i class="fa fa-linkedin-square" style="font-size:30px" ></i>
+        </a>
+        <a class="pl-3" href="https://github.com/sanjayrushee" target="_blank" ><i class="fa fa-github" style="font-size:30px"></i>
+        </a>
+      </div>
+    </footer>
+      
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+  </body>
+  </html>
