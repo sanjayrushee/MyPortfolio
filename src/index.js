@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Full Stack Developer (Freelance)",
             company: "Lexi Crew Enterprise",
             description: "Built and maintained full-stack web applications for clients, handling end-to-end development including frontend (React), backend (Node), and database (MongoDB and Dynamodb) ",
-            skills: ["HTML", "CSS", "Tailwind CSS", "TypeScript", "JavaScript", "Motion Design", "React js", "Node js", ""]
+            skills: ["HTML", "CSS", "Tailwind CSS", "TypeScript", "JavaScript", "Motion Design", "React js", "Node js","Aws"]
         },
 
     ];
